@@ -1,8 +1,14 @@
 # gpd-linux
 Project Directory Generator for Linux
 
+
+## Prerequisites
+- On Ubuntu 16.04 LTS , install [rails](https://gorails.com/setup/ubuntu/16.04 "Ruby on Rails").
+
+
 ## Syntax
     gpd [ domain [entity [project [application]]]]
+
 
 ## Parameters
     domain        Top level domain name abbreviation.
