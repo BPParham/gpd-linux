@@ -1,15 +1,16 @@
-#!/bin/sh
+#!/bin/bash
 
-Current_Version=1.2.0038
+Current_Version=1.2.0042
 Year=$(date +"%Y")
+filename=`basename $BASH_SOURCE`
 
 home() {
   clear
   echo "=========================================================================="
-  echo "                         $(basename $BASH_SOURCE)"
+  echo "                         $filename"
   echo "=========================================================================="
   echo ""
-  echo "BPTechNet $(basename $BASH_SOURCE) version $Current_Version"
+  echo "BPTechNet $filename version $Current_Version"
   echo "Copyright (c) 2000-$Year BP Technology Network"
   echo ""
   echo "What type of top level domain will be used? "
@@ -36,10 +37,10 @@ home() {
   elif [ "$DECIDE" = "9" ] ; then
     clear
     echo "=========================================================================="
-    echo "                         $(basename $BASH_SOURCE)"
+    echo "                         $filename"
     echo "=========================================================================="
     echo ""
-    echo "BPTechNet $(basename $BASH_SOURCE) version $Current_Version"
+    echo "BPTechNet $filename version $Current_Version"
     echo "Copyright (c) 2000-$Year BP Technology Network"
     echo ""
     echo "What abbreviation of top level domain will be used? (i.e. 'int' for International)"
@@ -66,10 +67,10 @@ home() {
 start() {
   clear
   echo "=========================================================================="
-  echo "                         $(basename $BASH_SOURCE)"
+  echo "                         $filename"
   echo "=========================================================================="
   echo ""
-  echo "BPTechNet $(basename $BASH_SOURCE) version $Current_Version"
+  echo "BPTechNet $filename version $Current_Version"
   echo "Copyright (c) 2000-$Year BP Technology Network"
   echo ""
   echo ""
@@ -86,10 +87,10 @@ start() {
 next() {
   clear
   echo "=========================================================================="
-  echo "                         $(basename $BASH_SOURCE)"
+  echo "                         $filename"
   echo "=========================================================================="
   echo ""
-  echo "BPTechNet $(basename $BASH_SOURCE) version $Current_Version"
+  echo "BPTechNet $filename version $Current_Version"
   echo "Copyright (c) 2000-$Year BP Technology Network"
   echo ""
   echo ""
@@ -107,10 +108,10 @@ create() {
   echo off
   clear
   echo "=========================================================================="
-  echo "                         $(basename $BASH_SOURCE)"
+  echo "                         $filename"
   echo "=========================================================================="
   echo ""
-  echo "BPTechNet $(basename $BASH_SOURCE) version $Current_Version"
+  echo "BPTechNet $filename version $Current_Version"
   echo "Copyright (c) 2000-$Year BP Technology Network"
   echo ""
   echo "Creating the branches directories!..."
